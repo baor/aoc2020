@@ -86,7 +86,7 @@ func task2(input []lineWithPassword) int {
 }
 
 // task1: 607
-// task2: 96047280
+// task2: 321
 
 func main() {
 	input := readFile("input.txt")
