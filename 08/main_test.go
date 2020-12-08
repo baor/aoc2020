@@ -8,7 +8,7 @@ import (
 
 func Test_Task1_1(t *testing.T) {
 	input := readFile("input_test_task1.txt")
-	expected := 11
+	expected := 5
 
 	// act
 	res := task1(input)
@@ -16,20 +16,9 @@ func Test_Task1_1(t *testing.T) {
 	assert.Equal(t, expected, res)
 }
 
-func Test_Task1_CreateAnswer_1(t *testing.T) {
-	input := `ab
-	ac`
-	expected := answers{"a": 2, "b": 1, "c": 1}
-
-	// act
-	a := createAnswersOfTheGroup(input)
-
-	assert.Equal(t, expected, a)
-}
-
-func Test_Task3_1(t *testing.T) {
+func Test_Task2_1(t *testing.T) {
 	input := readFile("input_test_task1.txt")
-	expected := 6
+	expected := 8
 
 	// act
 	res := task2(input)

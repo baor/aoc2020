@@ -1,4 +1,4 @@
-module _06
+module _08
 
 go 1.15
 
