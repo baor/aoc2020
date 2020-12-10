@@ -8,20 +8,20 @@ import (
 
 func Test_Task1_1(t *testing.T) {
 	input := readFile("input_test_task1.txt")
-	expected := 5
+	preamble := 5
+	expected := 127
 
 	// act
-	res := task1(input)
+	res := getWrongNumber(input, preamble)
 
 	assert.Equal(t, expected, res)
 }
 
 func Test_Task2_1(t *testing.T) {
 	input := readFile("input_test_task1.txt")
-	expected := 8
+	preamble := 5
+	expected := 62
 
-	// actca
-	res := task2(input)
-
-	assert.Equal(t, expected, res)
+	// act
+	assert.Equal(t, expected, getXMASNumber(getWrongNumber(input, preamble), input))
 }
